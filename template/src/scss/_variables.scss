@@ -1,0 +1,41 @@
+/*
+
+	Variables
+
+*/
+
+/* Colors */
+$color-blue: #00aef0;
+$color-orange: #f26522;
+
+$gray: #666666;
+$gray-dark: #333333;
+$gray-light: #d3d3d3;
+
+$white: #ffffff;
+
+/* Text and link colors */
+$text-color: $gray-dark;
+$text-color-light: $gray;
+
+$link-color: $color-blue;
+$link-color-hover: shade($link-color, 20%);
+
+/* Highlight and feedback colors */
+$color-highlight: #f8f2c6;
+$color-error: #990000;
+$color-success: #2d6f01;
+
+/* Font stacks */
+$font-family-base: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+$font-family-headline: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+$font-family-display: $font-family-headline;
+$font-family-plain: Arial, sans-serif;
+
+/* Type defaults */
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+/* Transition defaults */
+$transition-link: .1s linear;
+$transition-button: .2s linear;

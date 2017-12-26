@@ -1,0 +1,118 @@
+/*
+
+  Form Styling
+
+*/
+
+form, fieldset {
+  margin: 0;
+}
+
+
+textarea,
+select {
+  font-size: 15px;
+  line-height: normal;
+  margin: 0;
+  padding: 6px 12px;
+  border: 1px solid $gray-light;
+  display: block;
+  min-width: 280px;
+  max-width: 100%;
+  height: 31px;
+  background: #fafafa;
+  border-radius: 4px;
+
+  ::placeholder {
+    color: #aaa;
+  }
+
+  // IE placeholder class
+  &.placeholder {
+    color: #aaa;
+  }
+}
+
+
+textarea {
+  height: auto;
+  // use rows="8" to adjust the height in your markup
+}
+
+
+textarea:focus,
+select:focus {
+  outline: 0;
+}
+
+label,
+.label {
+  font-weight: bold;
+  color: $text-color-light;
+  padding: 0 0 4px 12px;
+  display: block;
+}
+
+// Default file upload
+input[type="file"] {
+  font-size: 15px;
+  line-height: 1;
+  color: $text-color-light;
+  outline: 0;
+}
+
+// Checkboxes and radio buttons
+.checkbox,
+.radio,
+.checkbox-inline,
+.radio-inline {
+  //padding: 0 0 10px 0;
+
+  label {
+    padding: 0 0 0 12px;
+    display: inline-block;
+    font-weight: normal;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  input {
+    margin: 0 5px 0 0;
+  }
+
+  p.label {
+
+    margin-bottom: 0;
+  }
+}
+
+// default is stacked
+.checkbox,
+.radio {
+  label {
+    display: block;
+  }
+}
+
+// Margin for rows
+.row {
+  margin-bottom: 1em;
+}
+
+// Validation
+
+
+textarea {
+  &.error {
+    border-color: #de2525;
+  }
+}
+// Inline error messages
+.error-msg {
+  display: block;
+  padding: 4px 0 0 12px;
+  font-size: 15px;
+  color: #de2525;
+}

@@ -1,0 +1,63 @@
+/*
+	
+	Button styles
+
+*/
+
+button[type="submit"],
+button[type="button"],
+input[type="button"], 
+input[type="submit"], 
+.button {
+	display: inline-block;
+	outline: 0;
+	border: none;
+	border-radius: 5px;
+	background-color: $color-blue;
+	color: $white;
+	padding: 8px 24px;
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	transition: all $transition-button;
+	cursor: pointer;
+
+	&:hover {
+		color: $white;
+		background-color: shade($color-blue, 20%);
+		text-decoration: none;
+	}
+
+	// Button variants
+	&.btn-large {
+		padding: 16px 48px;
+	}
+
+	// Button input as text link
+	&.btn-link {
+		padding: 0;
+		background: none;
+		border: none;
+		font-weight: normal;
+		color: $link-color;
+		transition: all $transition-link;
+
+		&:hover {
+			color: $link-color-hover;
+			background: none;
+		}
+	}
+
+	// Force button to full-width of parent
+	&.btn-block {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.button + .button {
+	margin-left: 15px;
+}

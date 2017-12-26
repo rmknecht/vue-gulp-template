@@ -1,0 +1,30 @@
+/*
+ * styles.scss
+ * Global style imports. This file should contain @import rules only.
+ */
+
+/* Shared + Variables.
+================================================== */
+	@import "variables";
+
+	@import "mixins";
+
+/* Vendor + Component imports.
+================================================== */
+
+	//@import "../../public/assets/vendor.scss";
+
+
+/* Site specific imports.
+================================================== */
+	@import "base";
+
+
+
+// Component modules
+	@import "modules/buttons";
+	@import "modules/forms";
+	@import "modules/header";
+	@import "modules/footer";
+
+// Page modules

@@ -1,0 +1,37 @@
+/*
+    Turn font smoothing off or on
+    http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+
+    Usage:
+
+      .dark-on-light { @include font-smoothing(off); }
+
+      .light-on-dark { @include font-smoothing(on); }
+*/
+
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+
+/*
+    Vertical align an element within its parent
+    http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+
+    Usage:
+
+       .element p { @include vertical-align; }
+*/
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
