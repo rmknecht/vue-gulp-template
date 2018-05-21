@@ -42,8 +42,7 @@ export function appWatch() {
     .on('error', err => {
       util.log('Browserify Error', util.colors.red(err.message));
     })
-    .pipe(source('app.js'))
-    .pipe(rename('build.js'))
+    .pipe(source('build.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('./maps'))
@@ -75,8 +74,7 @@ export function appBuild() {
   });
 
   return b.bundle()
-    .pipe(source('app.js'))
-    .pipe(rename('build.js'))
+    .pipe(source('build.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
         // Add transformation tasks to the pipeline here.
